@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <style>
+      /* universe selector  */
+      /* it sleect allt tags */
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #f7f7f7;
+
+        background-image: radial-gradient(
+          ellipse at center,
+          #f7f7f7 0%,
+          #e4daf9 56%,
+          #f9f9f9 100%
+        );
+        font-family: "Urbanist", sans-serif;
+      }
+      img {
+        width: 200px;
+      }
+
+      /* always remember that when ever you want spacing you have to use that 
+      farmula  */
+      /* mostly websites have 1200px  */
+      /* 1400px  */
+      /* 100%  */
+
+      .container {
+        /* it always make the size fixed it does not adjust according to the screen size  */
+        /* width: 1200px; */
+        /* background-color: red; */
+        /* it is used to make complete section in the center  */
+        max-width: 1200px;
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+      .nav_parent {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .nav_links a {
+        color: black;
+        padding: 10px;
+        /* background-color: red; */
+        /* if you write paddding it means padding from all sides */
+      }
+      .login_btn {
+        color: black;
+        /* background-color: red; */
+        padding: 10px 20px;
+      }
+      .Signup_btn {
+        color: white;
+        background-color: purple;
+        /* allsides  */
+        /* padding: 10px; */
+
+        /* 10 top and bottom 
+        15 left and right  */
+        padding: 10px 15px;
+        /* always btn have less pading from top and bottom and more padding 
+        from left and right  */
+
+        /* how to make corner rounded  */
+        border-radius: 8px;
+
+        /* for smoothness of the hover effect  */
+        /* it means when we hover it take 1second to complete the effect  */
+        transition: 0.5s;
+      }
+      .Signup_btn:hover {
+        background-color: transparent;
+      }
+
+      /* grid explaination  */
+      /* when ever you see the columns which have same size then close your eyes
+      and write grid  */
+      /* always grid used in parent  */
+      .section_1_home {
+        /* grid does not do anything  */
+        display: grid;
+        /* 1fr means fraction  */
+        /* it split the screen into two fractions who have same size  */
+        grid-template-columns: 1fr 1fr;
+        /* it is used to make spacing between columns  */
+        gap: 20px;
+      }
+      .one {
+        background-color: transparent;
+      }
+      .section_1_home h1 {
+        font-size: 45px;
+      }
+      .Students_imgs_header {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+      }
+      .students_2_header {
+        /* positions are used when you want to make something over to other elements  */
+        position: relative;
+        right: 15px;
+      }
+      .students_3_header {
+        position: relative;
+        right: 30px;
+      }
+
+      .students_4_header {
+        position: relative;
+        right: 45px;
+      }
+
+      .students_5_header {
+        position: relative;
+        right: 60px;
+      }
+      /* *****************icon styling  */
+      .header_crown {
+        color: orange;
+        font-size: 25px;
+      }
+      /* *********************styling for second column in header  */
+      .header_profile_column {
+        border: 2px solid white;
+        border-radius: 10px;
+        /* it means that to hide the part of the element which overflow */
+        overflow: hidden;
+      }
+      /* **********************backgorudn img styling *************  */
+      .Atif_profile_img {
+        width: 100%;
+        height: 280px;
+        background-position: top;
+        background-size: cover;
+        background-image: url("./Images/Atif_header_img.jpg");
+      }
+      .atif_expert {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- you can add more then 1 class to same tag  -->
+        <div class="nav_parent container">
+          <div>
+            <img src="Images/weblogo.png" alt="Logo" />
+          </div>
+          <div class="nav_links">
+            <a href="">Home</a>
+            <a href="">Practice</a>
+            <a href="">Free Mockup</a>
+            <a href="">Courses</a>
+          </div>
+          <div>
+            <a class="login_btn" href="">Login</a>
+            <a class="Signup_btn" href="">Signup</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ///////section ************************1  -->
+    <section>
+      <!-- shortcut  -->
+      <!-- .section_1_home -->
+      <div class="section_1_home container">
+        <div class="one">
+          <button>
+            <!-- ***************************icon upate****** -->
+            <i class="fa-solid fa-crown header_crown"></i> Most Trusted PTE
+            Learning Platform
+          </button>
+          <h1>Learn from an Expert Acheive 90+ with confindence.</h1>
+          <p>
+            300+ real exam practice questions, tailored courses, personalised
+            guidance, and proven strategies with AI-powered learning to help you
+            achieve your desired PTE score faster.
+          </p>
+          <a href="">Start Practicing</a>
+          <a href="">Explre Free Mock Test</a>
+
+          <div>
+            <img
+              class="Students_imgs_header students_1_header"
+              src="Images/Students_logo.jpg"
+              alt=""
+            />
+            <img
+              class="Students_imgs_header students_2_header"
+              src="Images/Students_logo.jpg"
+              alt=""
+            />
+            <img
+              class="Students_imgs_header students_3_header"
+              src="Images/Students_logo.jpg"
+              alt=""
+            />
+            <img
+              class="Students_imgs_header students_4_header"
+              src="Images/Students_logo.jpg"
+              alt=""
+            />
+            <img
+              class="Students_imgs_header students_5_header"
+              src="Images/Students_logo.jpg"
+              alt=""
+            />
+          </div>
+          <p>Join 10000 students who achieved 901 in their PTE exams!</p>
+        </div>
+
+        <!-- ******************second column header *******************  -->
+        <div class="header_profile_column">
+          <!-- this div is for backgorund image  -->
+          <div class="Atif_profile_img"></div>
+          <div class="atif_expert">
+            <!-- *********you have to add icon here *********  -->
+            <div>icon</div>
+            <div>
+              <h3>Muhammad Atif</h3>
+              <p>PTE Acdemic Expert</p>
+            </div>
+          </div>
+          <p>
+            “My goal is simple — to help you achieve the PTE score you need for
+            your student or skilled visa in Australia.”
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
