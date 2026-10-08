@@ -17,167 +17,9 @@
       referrerpolicy="no-referrer"
     />
     <title>Document</title>
-    <style>
-      /* universe selector  */
-      /* it sleect allt tags */
-
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        background-color: #f7f7f7;
-
-        background-image: radial-gradient(
-          ellipse at center,
-          #f7f7f7 0%,
-          #e4daf9 56%,
-          #f9f9f9 100%
-        );
-        font-family: "Urbanist", sans-serif;
-      }
-      img {
-        width: 200px;
-      }
-
-      /* always remember that when ever you want spacing you have to use that 
-      farmula  */
-      /* mostly websites have 1200px  */
-      /* 1400px  */
-      /* 100%  */
-
-      .container {
-        /* it always make the size fixed it does not adjust according to the screen size  */
-        /* width: 1200px; */
-        /* background-color: red; */
-        /* it is used to make complete section in the center  */
-        max-width: 1200px;
-        margin: auto;
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-
-      a {
-        text-decoration: none;
-      }
-      .nav_parent {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-      .nav_links a {
-        color: black;
-        padding: 10px;
-        /* background-color: red; */
-        /* if you write paddding it means padding from all sides */
-      }
-      .login_btn {
-        color: black;
-        /* background-color: red; */
-        padding: 10px 20px;
-      }
-      .Signup_btn {
-        color: white;
-        background-color: purple;
-        /* allsides  */
-        /* padding: 10px; */
-
-        /* 10 top and bottom 
-        15 left and right  */
-        padding: 10px 15px;
-        /* always btn have less pading from top and bottom and more padding 
-        from left and right  */
-
-        /* how to make corner rounded  */
-        border-radius: 8px;
-
-        /* for smoothness of the hover effect  */
-        /* it means when we hover it take 1second to complete the effect  */
-        transition: 0.5s;
-      }
-      .Signup_btn:hover {
-        background-color: transparent;
-      }
-
-      /* grid explaination  */
-      /* when ever you see the columns which have same size then close your eyes
-      and write grid  */
-      /* always grid used in parent  */
-      .section_1_home {
-        /* grid does not do anything  */
-        display: grid;
-        /* 1fr means fraction  */
-        /* it split the screen into two fractions who have same size  */
-        grid-template-columns: 1fr 1fr;
-        /* it is used to make spacing between columns  */
-        gap: 20px;
-      }
-      .one {
-        background-color: transparent;
-      }
-      .section_1_home h1 {
-        font-size: 45px;
-      }
-      .Students_imgs_header {
-        width: 40px;
-        height: 40px;
-        border-radius: 100%;
-      }
-      .students_2_header {
-        /* positions are used when you want to make something over to other elements  */
-        position: relative;
-        right: 15px;
-      }
-      .students_3_header {
-        position: relative;
-        right: 30px;
-      }
-
-      .students_4_header {
-        position: relative;
-        right: 45px;
-      }
-
-      .students_5_header {
-        position: relative;
-        right: 60px;
-      }
-      /* *****************icon styling  */
-      .header_crown {
-        color: orange;
-        font-size: 25px;
-      }
-      /* *********************styling for second column in header  */
-      .header_profile_column {
-        border: 2px solid white;
-        border-radius: 10px;
-        /* it means that to hide the part of the element which overflow */
-        overflow: hidden;
-      }
-      /* **********************backgorudn img styling *************  */
-      .Atif_profile_img {
-        width: 100%;
-        height: 280px;
-        background-position: top;
-        background-size: cover;
-        background-image: url("./Images/Atif_header_img.jpg");
-      }
-      .atif_expert {
-        display: flex;
-      }
-
-      /* **********************third section ************************  */
-      .Key_points_section {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 10px;
-      }
-      .Key_point_column {
-        background-color: white;
-        border-radius: 10px;
-        display: flex;
-      }
-    </style>
+    <!-- ************************this is the way how we can link *************** -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <style></style>
   </head>
   <body>
     <header>
@@ -201,7 +43,7 @@
       </nav>
     </header>
     <!-- ///////section ************************1  -->
-    <section>
+    <section class="Sections_spacing_top_bottom">
       <!-- shortcut  -->
       <!-- .section_1_home -->
       <div class="section_1_home container">
@@ -268,9 +110,6 @@
           </p>
         </div>
       </div>
-    </section>
-
-    <section>
       <div class="Key_points_section container">
         <div class="Key_point_column">
           <div>icon</div>
@@ -311,6 +150,67 @@
               repudiandae.
             </p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ****************************section_2_home***********************  -->
+    <section class="Sections_spacing_top_bottom">
+      <div class="section_2_home container">
+        <img src="" alt="" />
+        <h1 class="section_2_home_heading">
+          <span class="PTE_For_span">Pte Academy 90+</span> For?
+        </h1>
+        <div class="PTE_Criteria_Para_div">
+          <p class="PTE_Criteria_Para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+            libero earum quos, quidem quasi sequi eum itaque reprehenderit harum
+            ipsam, voluptas eaque eligendi perferendis alias.
+            <span class="Right_place_para">
+              possimus ex placeat veritatis quidem aliquam. Ut, accusamus.
+              Assumenda!
+            </span>
+          </p>
+        </div>
+        <div class="Section_2_home_grid">
+          <div class="Section_2_home_column">
+            <div class="section_2_icons"><i class="fa-solid fa-user"></i></div>
+            <h3>First-Time PTE Candidates</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+              repellendus harum quis,
+            </p>
+          </div>
+          <div class="Section_2_home_column">
+            <div class="section_2_icons"><i class="fa-solid fa-user"></i></div>
+            <h3>First-Time PTE Candidates</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+              repellendus harum quis,
+            </p>
+          </div>
+          <div class="Section_2_home_column">
+            <div class="section_2_icons"><i class="fa-solid fa-user"></i></div>
+            <h3>First-Time PTE Candidates</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+              repellendus harum quis,
+            </p>
+          </div>
+          <div class="Section_2_home_column">
+            <div class="section_2_icons"><i class="fa-solid fa-user"></i></div>
+            <h3>First-Time PTE Candidates</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+              repellendus harum quis,
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="Images/americanflag.png" alt="" />
+          <h2>Let's make your australian visa dream come true</h2>
+          <button>Student Visa</button>
+          <button>Skilled Visa</button>
         </div>
       </div>
     </section>
